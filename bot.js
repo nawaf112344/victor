@@ -349,7 +349,7 @@ if( verifed.some(word => message.author.id.includes(word)) ) {    return message
 
 client.on('message', msg => {
   if (msg.content === '$invite') {
-    msg.reply(':2_:  https://discordapp.com/api/oauth2/authorize?client_id=574273127815577610&permissions=8&scope=bot');
+    msg.reply('https://discordapp.com/api/oauth2/authorize?client_id=574273127815577610&permissions=8&scope=bot');
   }
 });
 //كود سبورت
