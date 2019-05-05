@@ -541,7 +541,7 @@ msg.delete();
 client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help") {
-         message.channel.send("شيك على الخاص:walking: " , "تم ")
+         message.channel.send("تم ارسآل اوامر البوت في الخاص شيك عليه:walking: .")
 
 
 
