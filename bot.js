@@ -415,16 +415,6 @@ msg.delete();
 });
 //كود اعطاء ميوت صوتي + وفكه
 client.on('message', message => {
-   if(message.content.startsWith(prefix + "inv")) {
-    message.guild.fetchInvites().then(invs => {
-      let user = message.mentions.users.first() || message.author
-      let personalInvites = invs.filter(i => i.inviter.id === user.id);
-      let inviteCount = personalInvites.reduce((p, v) => v.uses + p, 0);
-message.channel.send(`${user} has ${inviteCount} invites.`);
-});
-  }
-});
-client.on('message', message => {
       if(message.content.startsWith(prefix + 'mutevoice')) {
         if(!message.member.hasPermission("MUTE_MEMBERS")) return message.channel.sendMessage("**ليس لديك صلاحية لاعطاء ميوت صوتي**:x: ").then(m => m.delete(5000));
         if(!message.guild.member(client.user).hasPermission("MUTE_MEMBERS")) return message.reply("**I Don't Have `MUTE_MEMBERS` Permission**").then(msg => msg.delete(6000))
@@ -542,10 +532,7 @@ client.on('message', message => {
 - البوت فيه خصائص جديدة :video_game:
 -كل يوم خاصية جديدة :new:
 ==================================
-
-
-
- الاوامر العامه
+__الاوامر العامة__
 ${prefix}members ⇏ يعطيك معلومات عن العضاء
 ${prefix}server ⇏ يعطيك معلومات عن السيرفر
 ${prefix}bot ⇏ يعطيك معلومات عن البوت
@@ -554,14 +541,13 @@ ${prefix}avatar ⇏ لا اضهار صورتك الشخصية
 ${prefix}support⇏ سيرفر الدعم الفني
 ${prefix}invite⇏ لإ اضافت البوت
 =========================
-الاوامر الادارية
+__الاوامر الادارية__
 ${prefix}createcolors ⇏ لإانشاء 135 لون
 ${prefix}deletecolors ⇏ لو صار خطء في انشاء الاوان هذا الامر يمسح الاوان
 ${prefix}role all {neme roles} ⇏ لا اعطاء جميع الاعضاء الرتبة الذي حددتها
 ${prefix}role {neme roles} ⇏ لإاعطا العضو رتبة معينه
 ${prefix}mute ⇏لا اعطا شخص ميوت
 ${prefix}unmute ⇏ لا فك الميوت عن الشخص
-${prefix}inv⇏ لا معرفت كم عدد الاعضاء الي دخلتهم لسرفر
 ${prefix}mutevoice ⇏ لا اعطاء ميوت صوتي
 ${prefix}unmutevoice⇏ لا فك ميوت صوتي
 ${prefix}clear ⇏ لامسح الشات مع العدد
