@@ -347,27 +347,10 @@ if( verifed.some(word => message.author.id.includes(word)) ) {    return message
 }
 });
 
-  client.on('message', message => {
-  if (true) {
-if (message.content === '$invite') {
-      message.author.send('https://discordapp.com/api/oauth2/authorize?client_id=574273127815577610&permissions=8&scope=bot').catch(e => console.log(e.stack));
-
-    }
-   }
-  });
-
-
-client.on('message', message => {
-     if (message.content === "invite") {
-     let embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username)
-  .setColor("#9B59B6")
-  .addField(" ـــم ارســالك في الخــاص")
-
-
-
-  message.channel.sendEmbed(embed);
-    }
+client.on('message', msg => {
+  if (msg.content === '$invite') {
+    msg.reply(':2_:  https://discordapp.com/api/oauth2/authorize?client_id=574273127815577610&permissions=8&scope=bot');
+  }
 });
 //كود سبورت
 client.on('message', msg => {
