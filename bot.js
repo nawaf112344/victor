@@ -532,27 +532,29 @@ client.on('message', message => {
 - البوت فيه خصائص جديدة :video_game:
 -كل يوم خاصية جديدة :new:
 ==================================
+اذا حاب تخلي رتبه معينه يتغير لونها كل شوي سوي رول اسمها 
+__"Rainbow"__
 __الاوامر العامة__
 ${prefix}members ⇏ يعطيك معلومات عن العضاء
 ${prefix}server ⇏ يعطيك معلومات عن السيرفر
 ${prefix}bot ⇏ يعطيك معلومات عن البوت
 ${prefix}id ⇏ لاضهار معلوماتك الشخصيه
-${prefix}avatar ⇏ لا اضهار صورتك الشخصية
+${prefix}avatar ⇏ لـ اضهار صورتك الشخصية
 ${prefix}support⇏ سيرفر الدعم الفني
-${prefix}invite⇏ لإ اضافت البوت
+${prefix}invite⇏ لـ اضافت البوت
 =========================
 __الاوامر الادارية__
-${prefix}createcolors ⇏ لإانشاء 135 لون
+${prefix}createcolors ⇏ لـ لانشاء 135 لون
 ${prefix}deletecolors ⇏ لو صار خطء في انشاء الاوان هذا الامر يمسح الاوان
-${prefix}role all {neme roles} ⇏ لا اعطاء جميع الاعضاء الرتبة الذي حددتها
-${prefix}role {neme roles} ⇏ لإاعطا العضو رتبة معينه
-${prefix}mute ⇏لا اعطا شخص ميوت
-${prefix}unmute ⇏ لا فك الميوت عن الشخص
-${prefix}mutevoice ⇏ لا اعطاء ميوت صوتي
-${prefix}unmutevoice⇏ لا فك ميوت صوتي
-${prefix}clear ⇏ لامسح الشات مع العدد
-${prefix}ban⇏ لإ عطاء الشخص باند
-${prefix}kick⇏ لإ اطاء الشخص كيك
+${prefix}role all {neme roles} ⇏ لـ اعطاء جميع الاعضاء الرتبة الذي حددتها
+${prefix}role {neme roles} ⇏ لـ عطا العضو رتبة معينه
+${prefix}mute ⇏لـ إعطا شخص ميوت
+${prefix}unmute ⇏ لـ فك الميوت عن الشخص
+${prefix}mutevoice ⇏ لـ اعطاء ميوت صوتي
+${prefix}unmutevoice⇏ لـ فك ميوت صوتي
+${prefix}clear ⇏ لـ مسح الشات مع العدد
+${prefix}ban⇏ لـ عطاء الشخص باند
+${prefix}kick⇏ لـ اطاء الشخص كيك
 =========================
 الاوامر الميزك
 __قريبا.. | Soon..__
